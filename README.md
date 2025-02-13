@@ -1,2 +1,14 @@
 # My-projects
-I like pasta,
+ Age next year 
+ #Introduction 
+print('Kia Ora') 
+print("What's your name?") 
+#name input
+name = input("what's your name ")
+print("hello " + name) 
+#age input 
+age = input("how old are you ")
+#next year
+next_year = int(age) + 1
+print("This time next year you will be")
+print(next_year)
