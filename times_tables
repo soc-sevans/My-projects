@@ -1,0 +1,55 @@
+"""
+timestables
+SOPHIE EVANS
+5/4/25
+version 1
+"""
+#####################
+#ask for name
+name = input("name: ")
+
+
+#min is 1
+#max is 30
+#check name length is more than 1 and less than 30 
+MIN = 1
+MAX = 30
+if len(name) <= 1 :
+  print("put in a name")
+elif len(name) >= 30:
+  print( "that name is too long sorry")
+else: 
+ print("hello "+ name )
+#####################
+
+import random 
+#####################
+#setup function
+def timetable(table_in):
+  #generate a random number between 1-12
+  random_num = random.randint(1,12)
+  #ask the user what is the result for the random number * table_in
+  guess = int(input("what is the answer to " + str(random_num)+" * "+ str(table_in)+ "? " ))
+  #check if the user guessed the right number
+  if guess ==random_num*table_in:
+    print("yaaaaay")
+    score +1
+  else: 
+    print("noooooo")
+  #print the right message
+
+  #for x in range(1,13): # from 1-12
+   # print(x, "x", table_in, "=", x*table_in) 
+#####################
+#setup variables 
+table = 0
+score = 0
+####################
+# main
+table = int(input("Please enter a times table: "))
+
+timetable(table)
+####################
+
+
+
